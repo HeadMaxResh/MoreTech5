@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        MapKitFactory.setApiKey("7acffba5-1d1d-4a60-ba13-60ee1ad6ec34")
         MapKitFactory.initialize(this)
         setContentView(R.layout.activity_main)
         mapView = findViewById(R.id.mapview)
