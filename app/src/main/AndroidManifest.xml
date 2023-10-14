@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,9 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoreTech5"
         tools:targetApi="31">
+
+        <meta-data
+        android:name="com.yandex.android.key.API_KEY"
+        android:value="7acffba5-1d1d-4a60-ba13-60ee1ad6ec34"/>
+
         <activity
-            android:name=".presentation.MainActivity"
-            android:exported="true">
+            android:name=".presentation.activity.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.yandex.android.key.API_KEY"
-            android:value="7acffba5-1d1d-4a60-ba13-60ee1ad6ec34"/>
+
     </application>
 
 </manifest>
