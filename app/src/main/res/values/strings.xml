@@ -3,4 +3,5 @@
     <string name="yandex_mapkit_api_key">a4cdea05-a3af-40bc-8070-0a1de1666159</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Поиск</string>
 </resources>
