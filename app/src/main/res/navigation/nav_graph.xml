@@ -9,5 +9,18 @@
         android:id="@+id/homeFragment"
         android:name="com.example.moretech5.presentation.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addressSheetFragment"
+            app:destination="@id/addressSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addressSheetFragment"
+        android:name="com.example.moretech5.presentation.fragment.AddressSheetFragment"
+        android:label="fragment_sheet_address"
+        tools:layout="@layout/fragment_sheet_address" >
+        <action
+            android:id="@+id/action_addressSheetFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </dialog>
 </navigation>
